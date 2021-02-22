@@ -1,24 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
 *{
 	margin: 0px;
 	padding-top: 0px;
 }
+/*@media only screen and (max-width: 600px) {
+	body{
+	background-image: url("img/bg.png");
+	background-repeat: repeat-y;
+	}
+}
+*/
+body{
+	background-image: url("img/bg.png");
+	background-repeat: repeat-y;
+	height: 100vh;
+}
 
 h1{
 	font-size: 60px;
+	font-family: 'Akaya Telivigala', cursive;
 }
 
 section{
 	text-align: center;
-	margin: 50px;
+	margin: 20px;
 }
 
 .card{
-	width: 200px;
-	height: 300px;
+	width: 150px;
+	height: 225px;
 	border-radius: 15px;
 	box-shadow: 10px 10px 5px #999999;
-	margin: 10px 40px;
+	margin: 20px 40px;
 	display: inline-block;
+  position: relative;
+  transition: transform 5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover{
+	cursor: pointer;
 }
 
 img{
@@ -33,4 +55,12 @@ img{
 .front{
 	transform: rotateX(180deg);
 	display: none;
+}
+
+.fix{
+	pointer-events:none;
+}
+
+.deck{
+	margin: 30px 100px;
 }

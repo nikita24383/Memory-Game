@@ -1,5 +1,5 @@
 // all the images
-var back_images = ["img/1.png", "img/1.png", "img/2.png", "img/2.png", "img/3.png", "img/3.png", "img/4.png", "img/4.png", "img/5.png", "img/5.png", ]
+var back_images = ["img/1.png", "img/1.png", "img/2.png", "img/2.png", "img/3.png", "img/3.png", "img/4.png", "img/4.png", "img/5.png", "img/5.png", "img/6.png", "img/6.png", "img/7.png", "img/7.png", "img/8.png", "img/8.png", "img/9.png", "img/9.png"]
 
 let card = document.getElementsByClassName("card");
 let cards = [...card];
@@ -32,7 +32,9 @@ function displayCard(){
 	child[3].classList.remove("back");
 
 	// adding opened card to an array
-	openedCards.push(this);
+	if (!openedCards.includes(this)) {
+		openedCards.push(this);
+	}
 	console.log(openedCards);
 	if(openedCards.length == 2){
 		openedCard();
@@ -67,8 +69,12 @@ function openedCard(){
 
 function matched(){
 	openedCards[0].style.boxShadow = "none";
-
 	openedCards[1].style.boxShadow = "none";
+
+	openedCards[0].classList.add("fix");
+	openedCards[1].classList.add("fix");
+	openedCards[0].style.opacity = "0.5";
+	openedCards[1].style.opacity = "0.5";
 
 	openedCards = [];
 }
