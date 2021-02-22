@@ -1,0 +1,34 @@
+*{
+	margin: 0px;
+	padding-top: 0px;
+}
+
+h1{
+	font-size: 60px;
+}
+
+section{
+	text-align: center;
+	margin: 50px;
+}
+
+.card{
+	width: 200px;
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #999999;
+	margin: 10px 40px;
+	display: inline-block;
+}
+
+img{
+	border-radius: 15px;
+}
+
+.back{
+	display: none;
+}
+
+.front{
+	display: none;
+}
