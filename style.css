@@ -4,15 +4,8 @@
 	margin: 0px;
 	padding-top: 0px;
 }
-/*@media only screen and (max-width: 600px) {
-	body{
-	background-image: url("img/bg.png");
-	background-repeat: repeat-y;
-	}
-}
-*/
 body{
-	background-image: url("img/bg.png");
+	background-image: url("img/bg1.png");
 	background-repeat: repeat-y;
 	height: 100vh;
 }
@@ -20,6 +13,17 @@ body{
 h1{
 	font-size: 60px;
 	font-family: 'Akaya Telivigala', cursive;
+}
+
+span{
+	font-size: 30px;
+	font-family: 'Akaya Telivigala', cursive;
+}
+
+.restart{
+	display: inline-block;
+	margin: 0px 40px;
+	cursor: pointer;
 }
 
 section{
@@ -63,4 +67,38 @@ img{
 
 .deck{
 	margin: 30px 100px;
+}
+
+a{
+	text-decoration: none;
+	color: #2a2a2a;
+}
+
+footer{
+	padding: 20px;
+	background: #eaedea;
+	color: #515151;
+}
+
+a:hover{
+	color: #000000;
+}
+
+#popup{
+	align-items: center;
+	display: none;
+	font-size: 40px;
+	font-family: 'Akaya Telivigala', cursive;
+	position: absolute;
+	padding: 200px;
+	background: #f1f1f1;
+	top: 0;
+	margin-left: 28%;
+	border: 2px solid #cecece;
+}
+
+.play-again{
+	padding: 40px;
+	background: #cecece;
+	cursor: pointer;
 }

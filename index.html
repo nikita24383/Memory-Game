@@ -5,12 +5,17 @@
 	<meta name="viewpirt" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Memory Game</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<section>
 		<h1>MEMORY GAME</h1><br>
-		<span>Moves - </span><span class="Tmoves"></span>
+		<span id="Tmoves"></span><span style="padding-right: 100px"> : Move(s)</span>
+		<span>Time : </span><span id="Timer">0mins 0secs</span>
+		<div class="restart" onclick="location.reload()">
+		   <span>Play again </span><i class="fa fa-repeat"></i>
+		</div>
 	</section>
 
 	<section class="deck">
@@ -34,23 +39,6 @@
 			<img src="img/tada.jpg">
 			<img src="" class="back">
 		</div>
-
-		<div class="card">
-			<img src="img/tada.jpg">
-			<img src="" class="back">
-		</div>
-		<div class="card">
-			<img src="img/tada.jpg">
-			<img src="" class="back">
-		</div>
-		<div class="card">
-			<img src="img/tada.jpg">
-			<img src="" class="back">
-		</div>
-		<div class="card">
-			<img src="img/tada.jpg">
-			<img src="" class="back">
-		</div>
 		<div class="card">
 			<img src="img/tada.jpg">
 			<img src="" class="back">
@@ -76,6 +64,10 @@
 			<img src="img/tada.jpg">
 			<img src="" class="back">
 		</div>
+		<div class="card">
+			<img src="img/tada.jpg">
+			<img src="" class="back">
+		</div>
 
 		<div class="card">
 			<img src="img/tada.jpg">
@@ -89,7 +81,7 @@
 			<img src="img/tada.jpg">
 			<img src="" class="back">
 		</div>
-		<!-- <div class="card">
+		<div class="card">
 			<img src="img/tada.jpg">
 			<img src="" class="back">
 		</div>
@@ -97,9 +89,27 @@
 			<img src="img/tada.jpg">
 			<img src="" class="back">
 		</div>
- -->
+		<div class="card">
+			<img src="img/tada.jpg">
+			<img src="" class="back">
+		</div>
+	</section>
+
+	<section id="popup">
+		<div>
+			Congratulations !!!<br><br>
+			You completed in <span id="move"></span> moves.<br><br>
+			<div class="play-again" onclick="location.reload()">
+		   <span>Play again </span>
+		</div>
+		</div>
 	</section>
 
 <script type="text/javascript" src="work.js"></script>
 </body>
+<footer>
+	<section>
+		<span>Created & Designed by <a href="https://nikita24383.github.io/">Nikita Sarode</a> with &#127911;</span>
+	</section>
+</footer>
 </html>
