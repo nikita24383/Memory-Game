@@ -59,8 +59,8 @@ function openedCard(){
 	if (len == 2) {
 		if (openedCards[0].children[1].src == openedCards[1].children[1].src) {
 			matched();
-		}else{
-			unmatched();
+		}else if(openedCards[0].children[1].src != openedCards[1].children[1].src){
+			setTimeout(() => unmatched(), 500);
 		}
 	}
 }
